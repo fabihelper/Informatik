@@ -24,17 +24,19 @@ public class Girokonto
 		System.out.println();
 	}
 	
-	void betragUeberweisen(Betrag schulden, Girokonto girokonto_nach)
+	void betragUeberweisen(int schulden, Girokonto girokonto_nach)
 	{
-		kontostand = kontostand.verringern(schulden);
+		kontostand.verringern(schulden);
+		girokonto_nach.betragGutschreiben(schulden);
+		
 	}
 	
 	void betragAbheben(int betrag)
 	{
-		kontostand.verringern(betrag);
+
 	}
-	void betragGutschreiben(int betrag)
+	void betragGutschreiben(int schulden)
 	{
-		//+schulden
+		kontostand.erhoehen(schulden);
 	}
 }

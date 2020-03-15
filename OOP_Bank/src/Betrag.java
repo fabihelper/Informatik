@@ -13,11 +13,21 @@ public class Betrag
 	{
 		System.out.println(kontostandNeu);
 	}
-	public Betrag verringern(Betrag schulden) 
-	{
-		kontostandNeu = girobanking.this - schulden;
-		return new Betrag(kontostandNeu, 0);
-	}
 
+	public int getKontostand()
+	{
+		return kontostandNeu;
+	}
+	void verringern(int betrag) 
+	{
+		kontostandNeu = kontostandNeu- betrag;
+
+	}
+	
+	void erhoehen(int betrag) 
+	{
+		kontostandNeu = kontostandNeu + betrag;
+
+	}
 
 }
