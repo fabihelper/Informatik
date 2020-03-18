@@ -5,12 +5,12 @@ public class Girobanking
 	public static void main(String[] args)
 	{
 		//BASIC
-		Girokonto jochensKonto = new Girokonto("Jochen", "012345", 520, 15);
-		Girokonto lenasKonto = new Girokonto("Lena", "987654", 2100, 20);
+		Girokonto jochensKonto = new Girokonto("Jochen", "012345", 520, 15, 1999);
+		Girokonto lenasKonto = new Girokonto("Lena", "987654", 2100, 20, 1975);
 		
 		//ADDED
-		Girokonto hanssKonto = new Girokonto("Hans", "167853", 894, 56);
-		Girokonto sibillesKonto = new Girokonto("Sibille", "146781", 7641, 598);
+		Girokonto hanssKonto = new Girokonto("Hans", "167853", 894, 56, 1948);
+		Girokonto sibillesKonto = new Girokonto("Sibille", "146781", 7641, 598, 1986);
 		
 		
 		//BASIC

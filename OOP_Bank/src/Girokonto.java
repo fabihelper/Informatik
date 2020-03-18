@@ -1,3 +1,4 @@
+import java.sql.Date;
 
 public class Girokonto 
 {
@@ -6,15 +7,16 @@ public class Girokonto
 	int blz;
 	Betrag kontostand;
 	Betrag dispolimit;
+	int geburtsjahr;
 	
-	Girokonto(String b, String n, int e, int c)
+	Girokonto(String b, String n, int e, int c, int gJ)
 	{
 		besitzer = b;
 		kontonummer = n;
 		blz = 64892200;
 		kontostand = new Betrag(e, c);
 		dispolimit = new Betrag(1000, 0);
-		
+		geburtsjahr = gJ;
 	}
 	
 	void kontoanzeigen()
